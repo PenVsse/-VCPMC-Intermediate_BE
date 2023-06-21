@@ -5,17 +5,17 @@ import Playlist from "./Playlist";
 
 const BanGhiPlaylist = sequelize.define("BanGhiPlaylist", {
   banGhiId: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     references: {
-        model: BanGhi,
-        key: 'id'
+      model: BanGhi,
+      key: 'id'
     }
   },
   playlistId: {
     type: DataTypes.INTEGER,
     references: {
-        model: Playlist,
-        key: 'id'
+      model: Playlist,
+      key: 'id'
     }
   }
 });

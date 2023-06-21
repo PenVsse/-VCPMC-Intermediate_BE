@@ -14,12 +14,8 @@ const Playlist = sequelize.define("Playlist", {
   topics: {
     type: DataTypes.STRING
   },
-  userId: {
-    type: DataTypes.INTEGER,
-    references: {
-        model: User,
-        key: "id"
-    }
+  creater: {
+    type: DataTypes.STRING
   }
 })
 
