@@ -6,6 +6,7 @@ import roleRoter from "./router/role";
 import userRouter from "./router/user";
 import banGhiRouter from "./router/banGhi";
 import playlistRouter from "./router/playlist";
+import scheduleRouter from "./router/schedule";
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use('/role', roleRoter);
 app.use('/user', userRouter);
 app.use('/video', banGhiRouter);
 app.use('/playlist', playlistRouter);
+app.use('/schedule', scheduleRouter);
 
 const PORT = process.env.PORT;
 
