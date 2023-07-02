@@ -24,6 +24,12 @@ const Device = sequelize.define('Device', {
     },
     memory: {
         type: DataTypes.DOUBLE
+    },
+    sku: {
+        type: DataTypes.STRING
+    },
+    username: {
+        type: DataTypes.STRING
     }
 })
 

@@ -7,6 +7,8 @@ import userRouter from "./router/user";
 import banGhiRouter from "./router/banGhi";
 import playlistRouter from "./router/playlist";
 import scheduleRouter from "./router/schedule";
+import deviceRouter from "./router/device";
+import hdUyQuyenRouter from "./router/HDUyQuyen";
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.use('/user', userRouter);
 app.use('/video', banGhiRouter);
 app.use('/playlist', playlistRouter);
 app.use('/schedule', scheduleRouter);
+app.use('/device', deviceRouter);
+app.use('/hopdong', hdUyQuyenRouter);
 
 const PORT = process.env.PORT;
 

@@ -10,12 +10,8 @@ const HDUyQuyen = sequelize.define("HDUyQuyen", {
   name: {
     type: DataTypes.STRING,
   },
-  userId: {
-    type: DataTypes.INTEGER,
-    references: {
-      model: User,
-      key: "id",
-    },
+  user: {
+    type: DataTypes.STRING,
   },
   ownership: {
     type: DataTypes.INTEGER,
@@ -27,6 +23,6 @@ const HDUyQuyen = sequelize.define("HDUyQuyen", {
   }
 });
 
-HDUyQuyen.sync();
+sequelize.sync();
 
-export default Role;
+export default HDUyQuyen;
