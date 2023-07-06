@@ -9,6 +9,12 @@ import playlistRouter from "./router/playlist";
 import scheduleRouter from "./router/schedule";
 import deviceRouter from "./router/device";
 import hdUyQuyenRouter from "./router/HDUyQuyen";
+import BanGhiUyQuyenRouter from "./router/banGhiUyQuyen";
+import hdKhaiThacRouter from "./router/HDKhaiThac";
+import UnitsUsedRouter from "./router/unitUsed";
+import UnitsUsedDetailRouter from "./router/unitUsedDetail";
+import partnerRouter from "./router/partner";
+import ppdtRouter from "./router/phanPhoiDoanhThu";
 
 const app = express();
 
@@ -21,6 +27,12 @@ app.use('/playlist', playlistRouter);
 app.use('/schedule', scheduleRouter);
 app.use('/device', deviceRouter);
 app.use('/hopdong', hdUyQuyenRouter);
+app.use('/video-uq', BanGhiUyQuyenRouter);
+app.use('/hdkt', hdKhaiThacRouter);
+app.use('/unit-used', UnitsUsedRouter);
+app.use('/unit-used-detail', UnitsUsedDetailRouter);
+app.use('/partner', partnerRouter);
+app.use('/ppdt', ppdtRouter);
 
 const PORT = process.env.PORT;
 

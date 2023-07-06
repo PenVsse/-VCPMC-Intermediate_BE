@@ -9,17 +9,14 @@ const UnitsUsed = sequelize.define('UnitsUsed', {
     name: {
         type: DataTypes.STRING
     },
-    Admin: {
+    admin: {
         type: DataTypes.STRING
     },
-    used: {
+    user: {
         type: DataTypes.INTEGER
     },
     device: {
         type: DataTypes.INTEGER
-    },
-    hsd: {
-        type: DataTypes.DATE
     },
     status: {
         type: DataTypes.INTEGER

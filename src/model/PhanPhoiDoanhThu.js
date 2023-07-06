@@ -3,26 +3,23 @@ import { sequelize } from "../config/database";
 
 const PhanPhoiDoanhThu = sequelize.define('PhanPhoiDoanhThu',{
     id: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        primaryKey: true,
     },
-    name: {
+    user: {
         type: DataTypes.STRING
     },
     songs: {
         type: DataTypes.INTEGER
     },
-    money: {
-        type: DataTypes.INTEGER
+    doanhThu: {
+        type: DataTypes.STRING
     },
-    vat: {
-        type: DataTypes.INTEGER
+    phi: {
+        type: DataTypes.STRING
     },
-    royalties: {
-        type: DataTypes.INTEGER
-    },
-    day: {
-        type: DataTypes.DATE,
-        allowNull: true
+    nhuanBut: {
+        type: DataTypes.STRING
     }
 })
 
