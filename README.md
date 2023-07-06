@@ -1,4 +1,6 @@
 # -VCPMC-Intermediate_BE
-B1: npm start file BE
+1: Create database name: vcpmc
 
-B2: Import file vcpmc.sql in mysql to insert data.
+2: npm start file BE
+
+3: Import file vcpmc.sql in mysql to insert data.
