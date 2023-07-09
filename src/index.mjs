@@ -15,6 +15,7 @@ import UnitsUsedRouter from "./router/unitUsed";
 import UnitsUsedDetailRouter from "./router/unitUsedDetail";
 import partnerRouter from "./router/partner";
 import ppdtRouter from "./router/phanPhoiDoanhThu";
+import lsdsRouter from "./router/lichSuDoiSoat";
 
 const app = express();
 
@@ -33,6 +34,7 @@ app.use('/unit-used', UnitsUsedRouter);
 app.use('/unit-used-detail', UnitsUsedDetailRouter);
 app.use('/partner', partnerRouter);
 app.use('/ppdt', ppdtRouter);
+app.use('/lsds', lsdsRouter);
 
 const PORT = process.env.PORT;
 

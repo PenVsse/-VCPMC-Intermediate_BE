@@ -77,4 +77,28 @@ INSERT INTO `unitsuseds` (`id`, `name`, `admin`, `user`, `device`, `status`, `cr
 ('YQ14145145', 'Cty TNHH TM DV ABCEDEF', 'Admin 2', 25, 35, 1, '2023-07-05 18:28:12', '2023-07-31 23:28:12');
 
 
+INSERT INTO `lichsudoisoatdetail` (`Id`, `name`, `luotPhat`, `doanhThu`, `bieuDien`, `sanXuat`, `vcpmc`) VALUES
+(1, 'Let Us Be', 365, '365.000.000', '36.266', '36.266', '36.200'),
+(2, 'Be Alone', 250, '250.000.000', '2500', '2510', '2540'),
+(3, 'Gene', 425, '425.000.000', '1427', '1400', '1600'),
+(4, 'Remeber Us This Way', 400, '400.000.000', '4000', '4069', '4089'),
+(5, 'Kill This Love', 280, '280.000.000', '5434', '5214', '5384');
+
+
+INSERT INTO `ppdtdetailleft` (`Id`, `name`, `luotPhat`, `doanhThu`, `hanhChinhPhi`, `nhuanBut`) VALUES
+(1, 'Hết thương cạn nhớ ', 1200, '12.000.000', '2.500.000', '2.500.000'),
+(2, 'Cuộc gọi nhỡ', 300, '3.000.000', '425.000', '425.000'),
+(3, 'Gặp nhưng không ở lại', 1000, '10.000.000', '400.000', '400.000'),
+(4, 'Giá cô ấy đừng xuất hiện', 2500, '24.500.000', '280.000', '280.000'),
+(5, 'Gặp nhưng không ở lại 2', 400, '4.000.000', '250.000', '250.000');
+
+INSERT INTO `ppdtdetailright` (`Id`, `name`, `luotPhat`, `doanhThu`) VALUES
+(1, 'CTy TNHH A', 200, '2.500.000'),
+(2, 'CTy TNHH A', 300, '425.000'),
+(3, 'CTy TNHH A', 400, '400.000'),
+(4, 'CTy TNHH A', 500, '280.000'),
+(5, 'CTy TNHH A', 600, '250.000');
+
+INSERT INTO `lichsudoisoats` (`id`, `name`, `from`, `to`, `typeHD`, `tongLuotPhat`, `tongDoanhThu`, `dtChuaPhanPhoi`, `day`, `createdAt`, `updatedAt`) VALUES
+('HĐ123', 'Cty TNHH TM DV ABCEDEF', '2023-07-11 06:06:41', '2023-07-27 06:06:41', '1', 200, '365.000.000', '1.000.000', '2023-07-30 06:06:41', '2023-07-08 01:06:41', '2023-07-08 01:06:41');
 

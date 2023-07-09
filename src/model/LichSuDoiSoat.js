@@ -1,9 +1,10 @@
 import { DataTypes } from "sequelize";
 import { sequelize } from "../config/database";
 
-const LichSuDoiSoat = sequelize.define('LichSuDoiSoat',{
+const LichSuDoiSoat = sequelize.define('LichSuDoiSoat', {
     id: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        primaryKey: true
     },
     name: {
         type: DataTypes.STRING
@@ -17,14 +18,14 @@ const LichSuDoiSoat = sequelize.define('LichSuDoiSoat',{
     typeHD: {
         type: DataTypes.STRING
     },
-    total: {
+    tongLuotPhat: {
         type: DataTypes.INTEGER
     },
-    revenue: {
-        type: DataTypes.INTEGER
+    tongDoanhThu: {
+        type: DataTypes.STRING
     },
-    unRevenue: {
-        type: DataTypes.INTEGER,
+    dtChuaPhanPhoi: {
+        type: DataTypes.STRING,
         allowNull: true
     },
     day: {
