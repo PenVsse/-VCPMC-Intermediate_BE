@@ -25,7 +25,7 @@ lsdsRouter.get("/", async (req, res) => {
 
 lsdsRouter.get("/detail", async (req, res) => {
     try {
-        const data = await sequelize.query('SELECT * FROM lichsudoisoatdetail')
+        const data = await sequelize.query('SELECT * FROM lichsudoisoatdetails')
         if (data)
             return res.status(200).json({
                 message: "Success",

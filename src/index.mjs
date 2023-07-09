@@ -16,6 +16,10 @@ import UnitsUsedDetailRouter from "./router/unitUsedDetail";
 import partnerRouter from "./router/partner";
 import ppdtRouter from "./router/phanPhoiDoanhThu";
 import lsdsRouter from "./router/lichSuDoiSoat";
+import feedbackRouter from "./router/feedback";
+import LichSuDoiSoatDetail from "./model/LichSuDoiSoatDetail";
+import PPDTDetailLeft from "./model/ppdtDetailLeft";
+import PPDTDetailRight from "./model/ppdtDetailRight";
 
 const app = express();
 
@@ -35,6 +39,7 @@ app.use('/unit-used-detail', UnitsUsedDetailRouter);
 app.use('/partner', partnerRouter);
 app.use('/ppdt', ppdtRouter);
 app.use('/lsds', lsdsRouter);
+app.use('/feedback', feedbackRouter);
 
 const PORT = process.env.PORT;
 

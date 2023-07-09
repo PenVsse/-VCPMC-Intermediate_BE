@@ -25,7 +25,7 @@ ppdtRouter.get("/", async (req, res) => {
 
 ppdtRouter.get("/detail-left", async (req, res) => {
   try {
-    const data = await sequelize.query('SELECT * FROM ppdtdetailleft')
+    const data = await sequelize.query('SELECT * FROM ppdtdetaillefts')
     if (data)
       return res.status(200).json({
         message: "Success",
@@ -44,7 +44,7 @@ ppdtRouter.get("/detail-left", async (req, res) => {
 
 ppdtRouter.get("/detail-right", async (req, res) => {
   try {
-    const data = await sequelize.query('SELECT * FROM ppdtdetailright')
+    const data = await sequelize.query('SELECT * FROM ppdtdetailrights')
     if (data)
       return res.status(200).json({
         message: "Success",
